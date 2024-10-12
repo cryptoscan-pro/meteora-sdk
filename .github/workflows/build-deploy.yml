@@ -50,7 +50,7 @@ jobs:
           webhookUrl: ${{ secrets.DISCORD_RELEASES_WEBHOOK }}
           format: markdown
           message: |
-            🔄 **New Release**: [cryptoscan-pro/pumpfun-sdk](https://github.com/cryptoscan-pro/pumpfun-sdk/)
+            🔄 **New Release**: [cryptoscan-pro/meteora-sdk](https://github.com/cryptoscan-pro/meteora-sdk/)
 
             Status: *${{ needs.build.result == 'success' && '✅ SUCCESS' || '❌ ERROR' }}* 
             Branch: main

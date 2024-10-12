@@ -29,13 +29,13 @@ jobs:
 
       - name: Copy README.md to destination
         run: |
-          cp README.md .github/docs/pumpfun-sdk.md
+          cp README.md .github/docs/meteora-sdk.md
 
       - name: Commit and push changes
         run: |
           cd .github
           git add .
-          git commit -m "feat: update @cryptoscan/pumpfun-sdk docs"
+          git commit -m "feat: update @cryptoscan/meteora-sdk docs"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,4 +46,4 @@ jobs:
           rm -rf .github
 
       - name: Success message
-        run: echo "README.md copied into .github/docs/raydium-sdk.md"
+        run: echo "README.md copied into .github/docs/meteora-sdk.md"

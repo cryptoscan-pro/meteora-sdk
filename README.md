@@ -1,6 +1,6 @@
 # @cryptoscan/meteora-sdk
 
-The fastest and easiest way to trade on Meteora
+The fastest and easiest way to trade on Meteora.
 
 - Get rate/price of coin in USD/Solana
 - Buy/Sell coin
