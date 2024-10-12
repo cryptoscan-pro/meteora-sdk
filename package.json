@@ -1,0 +1,41 @@
+{
+  "name": "@cryptoscan/meteora-sdk",
+  "main": "dist/esm/index.js",
+  "type": "module",
+  "version": "1.0.0",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "keywords": [
+    "cryptoscan",
+    "meteora",
+    "sdk",
+    "solana",
+    "blockchain",
+    "api",
+    "cryptocurrency",
+    "wallet",
+    "swap"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "build:watch": "tsc -w -p tsconfig.esm.json",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "@cryptoscan/scanner-sdk": "latest",
+    "@cryptoscan/solana-wallet-sdk": "latest",
+    "@cryptoscan/swap-sdk": "latest",
+    "@solana/web3.js": "1.93.1"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.0.0",
+    "vitest": "^1.6.0"
+  }
+}

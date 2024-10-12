@@ -1,0 +1,20 @@
+{
+  "name": "@cryptoscan/meteora-bot",
+  "module": "src/index.ts",
+  "scripts": {
+    "start": "ts-node --esm src/index.ts",
+    "dev": "ts-node --esm src/test.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@cryptoscan/meteora-sdk": "0.1.0",
+    "@cryptoscan/solana-wallet-sdk": "^0.0.3",
+    "dotenv": "^16.4.5"
+  }
+}
